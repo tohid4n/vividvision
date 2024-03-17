@@ -1,0 +1,17 @@
+Django:
+    Django==5.0.3
+
+Django razorpay :
+    razorpay==1.4.1
+
+Django Environ:
+    django-environ==0.11.2
+
+Django whitenoise:
+    whitenoise==6.6.0
+
+Django gunicorn:
+    gunicorn==21.2.0 
+
+Django psycopg2:
+    psycopg2==2.9.9

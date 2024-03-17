@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Vividivision Academy A Consulting Buissness Agency{% endblock title %}
+{% block content %}
+
+  <div class="mt-10">
+  <div class="m-auto w-full md:w-10/12">
+    <div class="m-4 flex justify-center">
+ 
+      <div>
+
+  <!-- Hero section -->
+    
+    
+      <div class="flex flex-col items-center lg:flex-row gap-8 sm:gap-10 lg:gap-14 w-full lg:mt-8 mb-8">
+        <div class="w-full lg:w-3/5">
+          <div>
+            <h1 class="text-5xl xsm:text-6xl text-GreenGray font-Inter font-bold leading-snug xsm:leading-snug text-center">Join Our Outstanding Coaching Consultancy.</h1>
+          </div>
+          <div class="text-xl font-Inter font-extralight text-slate-700 leading-normal">
+            <p>We are dedicated to providing the best coaching consultancy. We are mainly locally operated, but now we are moving towards online. For More details about our coaching Consultancy look below. For Your ease we Provided a form on the right side to Enter Whatever amount you want because we are not running our business solely for profit, We are using our profits to help poor underprivileged people in India, that's why we haven't defined the pricing. We suggest you look at our galleries.</p>
+          </div>
+        </div>
+
+        <div class="w-full flex max-lg:justify-center max-lg:items-center lg:w-2/5 font-Inter text-slate-700 text-lg">
+          <form method="post">
+            {% csrf_token %}
+            {% for field in form %}
+              <div class="mt-4">
+                <label for="{{ field.id_for_label }}" class="block mb-4 font-OpenSans text-3xl font-normal text-black dark:text-white">{{ field.label }}</label>
+                {{ field }}
+              </div>
+            {% endfor %}
+    
+            <div>
+              <button class="text-xl font-Inter font-normal text-NearGrayTwo text-center w-80 xsm:w-96 py-5 border-radius-50 bg-GreenGray mt-8 hover:bg-slate-950">Join now</button>
+            </div>
+          </form>
+    </div>
+  </div>
+
+
+<!-- Gallery section -->
+  
+<div class="mt-16 mb-10">
+  <img class="border-radius-50" src="{% static 'img/general/img-12.jpg' %}">
+</div>
+
+      
+      <div class="!visible hidden" id="collapseExample1" data-te-collapse-item>
+        
+
+        <div class="mt-16 mb-10">
+          <img class="border-radius-50" src="{% static 'img/general/img-2.jpg' %}">
+        </div>
+
+        <div class="mt-16 mb-10">
+          <img class="border-radius-50" src="{% static 'img/general/img-3.jpg' %}">
+        </div>
+
+        <div class="mt-16 mb-10">
+          <img class="border-radius-50" src="{% static 'img/general/img-4.jpg' %}">
+        </div>
+
+        <div class="mt-16 mb-10">
+          <img class="border-radius-50" src="{% static 'img/general/img-5.jpg' %}">
+        </div>
+
+
+        <div class="mt-16 mb-10">
+          <img class="border-radius-50" src="{% static 'img/general/img-6.jpg' %}">
+        </div>
+
+
+        <div class="mt-16 mb-10">
+          <img class="border-radius-50" src="{% static 'img/general/img-7.jpg' %}">
+        </div>
+
+        <div class="mt-16 mb-10">
+          <img class="border-radius-50" src="{% static 'img/general/img-8.jpg' %}">
+        </div>
+
+        <div class="mt-16 mb-10">
+          <img class="border-radius-50" src="{% static 'img/general/img-9.jpg' %}">
+        </div>
+
+        <div class="mt-16 mb-10">
+          <img class="border-radius-50" src="{% static 'img/general/img-10.jpg' %}">
+        </div>
+
+        <div class="mt-16 mb-10">
+          <img class="border-radius-50" src="{% static 'img/general/img-11.jpg' %}">
+        </div>
+
+        <div class="mt-16 mb-10">
+          <img class="border-radius-50" src="{% static 'img/general/img-1.jpg' %}">
+        </div>
+        
+        
+      </div>
+          
+    
+
+      <script>
+        function toggleButtonText(buttonId) {
+          var button = document.getElementById(buttonId);
+          // Toggle the "Learn More" and "Close" text
+          if (button.textContent === 'View Gallery') {
+            button.textContent = 'Close';
+          } else {
+            button.textContent = 'View Gallery';
+          }
+        }
+      </script>
+      
+        <div type="button"
+          data-te-collapse-init
+          data-te-ripple-init
+          data-te-target="#collapseExample1"
+          aria-expanded="false"
+          aria-controls="collapseExample1" class="flex justify-center">
+            <button type="button"  type="button" id="toggleButton1" onclick="toggleButtonText('toggleButton1')" class="text-base font-Inter font-normal text-black text-center border-2 border-green-950 border-radius-50 py-3 px-20 xsm:px-28 mt-8">View Gallery</button>
+          </div>
+        
+  
+
+
+<!-- About Us section -->
+
+
+  <div class="flex justify-center w-full my-20">
+    <div>
+    <div>
+      <h2 class="text-4xl xsm:text-5xl text-GreenGray font-Inter font-bold leading-snug xsm:leading-snug text-center mb-6">Who we are?</h2>
+    </div>
+    <div class="text-xl font-Inter font-extralight text-slate-700 text-center leading-normal">
+      <p>We are a business that earns money through consultation on education and our most profits goes to charity. We are dedicated our business to the poor underprivileged people of India. We help Private Institutions, Coaching centers, Schools, and Colleges by Giving Consultancy on education and improvement of the education structure. That's our main income and as we said earlier Our president, chair main of the company, or owner of the company <strong class="text-slate-800">MR. Saiyyad Attar</strong> has dedicated his life to the well-being of poor people. We are a team of employees and local honest people, Who are responsible for whatever we are.</p>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      <div class="flex flex-col md:flex-row items-center gap-8 sm:gap-10 md:gap-14 w-full mb-8">
+        <div class="w-full md:w-3/5">
+          <div><h2 class="text-3xl leading-normal font-Inter font-normal text-slate-800">We <strong>Vividivision Academy</strong> Are Helping Poor, Underprivileged People. Support Us by Buying Our Conseltancy.</h2></div>
+          <div class="text-xl font-Inter font-extralight text-slate-700 leading-normal">
+            <p>Your generous money can help us build new homes, provide emergency shelter, and offer support services to those in need.</p>
+          </div>
+        </div>
+
+        <div class="w-full md:w-2/5 font-Inter text-slate-700 text-lg">
+          <p class="text-3xl leading-normal font-Inter font-normal text-slate-800 mb-3">Conatct Us</p>
+          <ul class="space-y-1 ml-1">
+            <li><strong class="text-slate-800">Email:</strong> Saiyyad Attar</li>
+            <li><strong class="text-slate-800">Phone:</strong> +919632138485</li>
+            <li><strong class="text-slate-800">Address:</strong> H.NO:- 11-1081/8/2 MSK MILL, NEAR GOUL BOUDI GULBARGA, KARNATAKA-585103</li>
+          </ul>
+        </div>
+    </div>
+
+
+    </div>
+</div>
+</div>  
+</div>  
+
+ 
+    
+{% endblock content %}
+  
+
+

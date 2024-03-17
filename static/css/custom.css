@@ -1,0 +1,26 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+
+/* ... messages ... */
+
+.alert {
+  /* ... your existing styles ... */
+  position: fixed; /* Add position: fixed to fix the alert in the viewport */
+  top: 0; /* Place the alert at the top */
+  left: 50%; /* Center the alert horizontally */
+  transform: translateX(-50%); /* Center the alert horizontally */
+  z-index: 100; /* Increase z-index to make it appear above other elements */
+}
+

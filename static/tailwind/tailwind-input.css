@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    .word-spacing {
+        word-spacing: 1rem;
+    }
+
+    .font-height-h1 {
+        font-size: 97.849px;
+    }
+
+    .font-height-h2 {
+        font-size: 90px;
+    }
+
+   .border-radius-50 {
+        border-radius: 50px;
+   }
+    
+  
+}
+
+
+@layer utilities {
+    @variants responsive {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+    }
+  }
