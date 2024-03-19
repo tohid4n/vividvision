@@ -1644,6 +1644,10 @@ input:checked + .toggle-bg {
   margin-top: 6rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -2967,6 +2971,10 @@ input:checked + .toggle-bg {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -5726,6 +5734,10 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
 .hover\:\!opacity-90:hover {
   opacity: 0.9 !important;
 }
@@ -7104,6 +7116,14 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 640px) {
+  .sm\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .sm\:mt-0 {
+    margin-top: 0px;
+  }
+
   .sm\:mt-4 {
     margin-top: 1rem;
   }
@@ -7158,6 +7178,10 @@ input:checked + .toggle-bg {
     margin-bottom: 0px;
   }
 
+  .md\:mr-6 {
+    margin-right: 1.5rem;
+  }
+
   .md\:w-10\/12 {
     width: 83.333333%;
   }
@@ -7204,6 +7228,10 @@ input:checked + .toggle-bg {
     width: 60%;
   }
 
+  .lg\:w-9\/12 {
+    width: 75%;
+  }
+
   .lg\:max-w-\[972px\] {
     max-width: 972px;
   }
@@ -7214,11 +7242,6 @@ input:checked + .toggle-bg {
 
   .lg\:gap-14 {
     gap: 3.5rem;
-  }
-
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .lg\:leading-relaxed {

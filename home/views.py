@@ -22,6 +22,27 @@ class HomePageView(generic.FormView):
 
 
 
+class PrivacyAndPolicy(generic.TemplateView):
+    template_name = "privacy-policy.html"
+    
+    
+class TermsAndConditions(generic.TemplateView):
+    template_name = "terms-and-conditions.html"
+    
+    
+class RefundPolicies(generic.TemplateView):
+    template_name = "refund-policies.html"        
+    
+    
+class About(generic.TemplateView):
+    template_name = "about-us.html"
+    
+class Contact(generic.TemplateView):
+    template_name = "contact-us.html"
+    
+    
+    
+        
 class PaymentView(generic.TemplateView):
     template_name = 'payment.html'
 
@@ -37,9 +58,6 @@ class PaymentView(generic.TemplateView):
         payment = client.order.create(data=data)
         donation.razor_pay_order_id = payment['id']
         donation.save()
-        print("******")
-        print(payment)
-        print("******")
         context['donation'] = donation
         context['payment'] = payment
         context['key_id'] = settings.KEY_ID
@@ -86,3 +104,4 @@ def success(request):
     donation.razor_pay_payment_id_signature = razorpay_signature
     donation.save()
     return render(request, 'payment-success.html')
+

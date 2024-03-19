@@ -139,9 +139,8 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 
 
-    
-ALLOWED_HOSTS = ['*']
-#ALLOWED_HOSTS = ['mycoes.com', 'www.mycoes.com', '.herokuapp.com', 'mycoes-d04bce713e72.herokuapp.com']
+
+ALLOWED_HOSTS = ['www.vividvisioncorp.com', 'vividvision-4d0493800b68.herokuapp.com']
 
 SITE_ID=1
 
