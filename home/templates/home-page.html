@@ -23,7 +23,7 @@
         </div>
 
         <div class="w-full flex max-lg:justify-center max-lg:items-center lg:w-2/5 font-Inter text-slate-700 text-lg">
-          <form method="post">
+          {% comment %} <form method="post">
             {% csrf_token %}
             {% for field in form %}
               <div class="mt-4">
@@ -36,7 +36,27 @@
               <button class="text-xl font-Inter font-normal text-NearGrayTwo text-center w-80 xsm:w-96 py-5 border-radius-50 bg-GreenGray mt-8 hover:bg-slate-950">Join now</button>
             </div>
           </form>
-    </div>
+     {% endcomment %}
+    
+          <div>
+            <p class="text-3xl leading-normal font-Inter text-center font-normal text-slate-800 mb-3">Pay With Choice</p>
+            
+                  <div>
+                    <a href="https://razorpay.me/@vividvisioncommunityacademyop">
+                      <button class="text-xl font-Inter font-normal text-NearGrayTwo text-center w-80 xsm:w-96 py-5 border-radius-50 bg-GreenGray mt-8 mb-4 hover:bg-slate-950">Razor Pay</button>
+                    </a>
+                    </div>
+          
+                    <div class="flex justify-center">-----Or-----</div>
+          
+                    <div>
+                      <a href="https://paypal.me/vividvisioncommunity?country.x=IN&locale.x=en_GB">
+                      <button class="text-xl font-Inter font-normal text-NearGrayTwo text-center w-80 xsm:w-96 py-5 border-radius-50 bg-black mt-4 hover:bg-slate-950">Paypal Pay</button>
+                     </a>
+                    </div>
+                  </div>
+    
+        </div>
   </div>
 
 
@@ -153,7 +173,7 @@
         <div class="w-full md:w-2/5 font-Inter text-slate-700 text-lg">
           <p class="text-3xl leading-normal font-Inter font-normal text-slate-800 mb-3">Conatct Us</p>
           <ul class="space-y-1 ml-1">
-            <li><strong class="text-slate-800">Email:</strong> Saiyyad Attar</li>
+            <li><strong class="text-slate-800">Email:</strong> vividvisioncommunityacademyopc@gmail.com</li>
             <li><strong class="text-slate-800">Phone:</strong> +919632138485</li>
             <li><strong class="text-slate-800">Address:</strong> H.NO:- 11-1081/8/2 MSK MILL, NEAR GOUL BOUDI GULBARGA, KARNATAKA-585103</li>
           </ul>

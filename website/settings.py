@@ -167,7 +167,7 @@ LOGGING = {
 
 
 
-KEY_ID = os.getenv('KEY_ID')
-KEY_SECRET = os.getenv('KEY_SECRET')
-OPEN_EXCHANGE_RATES_APP_ID = os.getenv('OPEN_EXCHANGE_RATES_APP_ID')
+# KEY_ID = os.getenv('KEY_ID')
+# KEY_SECRET = os.getenv('KEY_SECRET')
+# OPEN_EXCHANGE_RATES_APP_ID = os.getenv('OPEN_EXCHANGE_RATES_APP_ID')
 SECURE_CROSS_ORIGIN_OPENER_POLICY = "same-origin-allow-popups"

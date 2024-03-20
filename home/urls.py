@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import HomePageView, About, Contact, PrivacyAndPolicy, TermsAndConditions, RefundPolicies, PaymentView, success
+from .views import HomePageView, About, Contact, PrivacyAndPolicy, TermsAndConditions, RefundPolicies
 
 
 app_name = 'home'
@@ -12,6 +12,6 @@ urlpatterns = [
     path('privacy-and-policy/', PrivacyAndPolicy.as_view(), name="privacy-policy"),
     path('terms-and-conditions/', TermsAndConditions.as_view(), name="terms-and-conditions"),
     path('refund-policies/', RefundPolicies.as_view(), name="refund-policies"),
-    path('payment/<int:donation_id>/', PaymentView.as_view(), name="payment-page"),
-    path('payment/success/', success, name="payment-success"),
+    # path('payment/<int:donation_id>/', PaymentView.as_view(), name="payment-page"),
+    # path('payment/success/', success, name="payment-success"),
 ]
